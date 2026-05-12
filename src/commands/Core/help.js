@@ -191,7 +191,7 @@ export async function createInitialHelpMenu(client) {
 
     return {
         embeds: [embed],
-        components: [buttonRow, selectRow],
+        components: [selectRow],
     };
 }
 
