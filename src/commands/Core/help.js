@@ -166,17 +166,6 @@ export async function createInitialHelpMenu(client) {
         CATEGORY_SELECT_ID,
         "Select to view the commands",
         options,
-    );
-
-    const buttonRow = new ActionRowBuilder().addComponents([
-        bugReportButton,
-        supportButton,
-        touchpointButton,
-    ]);
-
-    return {
-        embeds: [embed],
-        components: [buttonRow, selectRow],
     };
 }
 
