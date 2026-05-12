@@ -1,4 +1,4 @@
-﻿import 'dotenv/config';
+import 'dotenv/config';
 import { Client, Collection, GatewayIntentBits } from 'discord.js';
 import { REST } from '@discordjs/rest';
 import express from 'express';
@@ -46,7 +46,7 @@ class TitanBot extends Client {
 
   async start() {
     try {
-      startupLog('Starting TORN...');
+      startupLog('Starting TitanBot...');
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       startupLog('Initializing database...');
@@ -184,7 +184,7 @@ class TitanBot extends Client {
 
     app.get('/', (req, res) => {
       res.status(200).json({ 
-        message: 'TORN System Online',
+        message: 'TitanBot System Online',
         version: '2.0.0',
         timestamp: new Date().toISOString()
       });
@@ -381,6 +381,8 @@ try {
 }
 
 export default TitanBot;
+
+
 
 
 
